@@ -1,0 +1,58 @@
+@import './../../abstract/variables';
+
+
+
+.btn-contract {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 50%;
+  background: $primary-cian;
+  color: #ffffff;
+  background: linear-gradient(180deg, $primary-cian 0%, $secondary-cian 70%);
+  border: 1px solid $shadown-cian;
+  // box-shadow: $box-shadown;
+  font-size: 1.1em;
+
+
+  &:hover {
+    color: #ffffff;
+    background: $primary-cian;
+    border: 1px solid $primary-white;
+    // box-shadow: $box-shadown;
+
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-prev-next {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    color: #ffffff;
+    background: $primary-cian;
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

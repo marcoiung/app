@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+  overflow: hidden;
+
+  li {
+    float: left;
+    padding: 0.12em 0.9em 0.12em 0.12em;
+
+    a{
+      display: block;
+      color: $link;
+      text-align: center;
+      text-decoration: none;
+      padding: 0;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+// ul {
+//   list-style-type: none;
+//   overflow: hidden;
+
+//   li {
+//     float: left;
+//     padding: 0.12em 0.9em 0 0;
+
+//     a{
+//       display: block;
+//       color: $link;
+//       text-align: center;
+//       text-decoration: none;
+
+//       &:hover{
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+// }

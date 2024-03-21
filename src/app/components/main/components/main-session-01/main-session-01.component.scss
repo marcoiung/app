@@ -1,0 +1,45 @@
+@import './../../../../../styles/abstract/variables';
+
+.app-main-session-01 {
+
+  .main-session-01-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 30px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 800px;
+        height: 100%;
+
+        h1 {
+          line-height: normal;
+          font-family: Poppins;
+          font-size: 40px;
+          font-weight: 300;
+          color: $primary-black;
+        }
+
+        p{
+          line-height: normal;
+          font-family: Poppins;
+          font-size: 19px;
+
+          color:$primary-black;
+      }
+    }
+
+    .right {
+      width: 450px;
+      display: flex;
+      justify-content: center;
+
+      // background-color: aqua;
+    }
+  }
+}

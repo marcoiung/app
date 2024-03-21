@@ -1,0 +1,7 @@
+@import './abstract/layout';
+@import './abstract/variables';
+
+body{
+  font-family: Poppins;
+  background-color: $app-bg;
+}
