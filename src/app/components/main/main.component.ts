@@ -6,11 +6,8 @@ import { MainSession04Component } from './components/main-session-04/main-sessio
 
 @Component({
   selector: 'app-main',
-  standalone: true,
-  imports: [MainSession01Component,MainSession02Component,MainSession03Component,MainSession04Component],
   templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-
 }

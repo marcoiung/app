@@ -3,17 +3,12 @@ import { ISlide } from '../model/carrousel';
 
 @Component({
   selector: 'app-slide',
-  standalone: true,
-  imports: [],
   templateUrl: './slide.component.html',
-  styleUrl: './slide.component.scss'
+  styleUrls: ['./slide.component.scss']
 })
 export class SlideComponent implements OnChanges {
-  @Input() slide:ISlide
-
-
+  @Input() slide:ISlide;
   next:ISlide;
-
 
   ngOnChanges(changes: SimpleChanges) {
 
@@ -21,7 +16,8 @@ export class SlideComponent implements OnChanges {
 
     if (next) {
       this.slide = next;
-    }
-  }
 
+    }
+
+  }
 }

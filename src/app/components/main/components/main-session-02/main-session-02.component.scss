@@ -1,62 +1,91 @@
 @import './../../../../../styles/abstract/variables';
+@import './../../../../../styles/abstract/utils.scss';
 
 .app-main-session-02 {
+  margin-top: 3rem;
 
   .main-session-02-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: lef;
-    // gap: 50px;
-    // padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 
+    width: 100%;
+    max-width: 111rem;
 
+    gap: 2rem;
+    padding: 1rem 1rem 3.0rem 1rem ;
+
+    border: 0.2rem solid #D0E0E5;
+
+    box-shadow: 0 0.2rem 0.8rem 0.1rem rgba(19, 73, 178, 0.45);
+    border-radius: 0.5rem;
+    margin: 1em 0;
 
         h1 {
           line-height: normal;
           font-family: Poppins;
-          font-size: 40px;
-          font-weight: 300;
+          font-size: 2.6rem;
+          font-weight: 700;
           color: $primary-black;
         }
 
-        .cards {
+        .cards-container {
+
           display: flex;
           flex-direction: row;
-          justify-content:center;
-          align-items: center;
-          gap:30px;
+          justify-content: center;
+          width: 100%;
+          padding: 0 2rem;
 
-
-
-          .card {
-            width: 320px;
-            height: 100%px;
-
+          .card-wrap {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            gap: 5rem;
 
-            border-radius: 15px;
-            background-color:  aqua;//$primary-white;
-            box-shadow: $card-shadown;
+            .card {
+              width: 33.3333%;
 
-            padding: 20px;
+              display: flex;
+              flex-direction: column;
+              padding: 1rem;
+              justify-content: flex-start;
+              align-items: center;
+              background-color: $primary-white;
 
+              .icon{
+                width: 15rem;
+                height: 15rem;
+              }
 
+              .text{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.1rem;
 
-            .icon {
-              width: 105;
-              height: 105;
-              padding-top: 10px;
+                h1{
+                  color: $primary-black;
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  line-height: normal;
+                  text-align: center;
+                }
+
+                p{
+
+                  line-height: 2.5rem;
+                  font-family: Poppins;
+                  font-size: 1.3rem;
+                  text-align: center;
+
+                  color:$primary-black;
+                }
+              }
             }
-
-
           }
-
-
-
-
         }
   }
 }

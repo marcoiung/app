@@ -2,7 +2,7 @@
 
 
 
-$primary-blue: #0066B3;
+$primary-blue: #005ca9;
 $primary-cian: #36B8AE;
 $secondary-cian: #309488;
 $terciary-cian: #688F7F;
@@ -19,19 +19,20 @@ $secondary-white: #eeeeee;
 
 $app-bg:  #F0F5FF;
 $carrousel-bg: $secondary-cian;
-// $main-bg: $primary-white;
 
+$btn-contract-txt:$secondary-cian;
+$btn-contract-bg: $primary-white;
 
-$card-shadown: 0px 8px 10px 0px #E3E7EF;
+$card-shadown: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-
+$banner-bg: #e3e7ef;
 
 
 $shadown-cian: #267168;
 $text-light: $primary-white;
-$text-shadown: 0 0.2em 0.1em $shadown-cian;
-$box-shadown:  0 0.2em 0.1em $secondary-cian;
-$box-shadown-light:  0 0.2em 0.1em $primary-cian;
+$text-shadown: 0 0.2rem 0.1rem $shadown-cian;
+$box-shadown:  0 0.2rem 0.1rem $secondary-cian;
+$box-shadown-light:  0 0.2rem 0.1rem $primary-cian;
 
 $link: $primary-white;
 $link-hover: $primary-white;

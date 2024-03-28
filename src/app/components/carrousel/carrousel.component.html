@@ -1,13 +1,17 @@
 <section class="app-carrousel">
 
   <section class="carrousel-container">
+
     <section class="slide">
       <app-slide [slide]="slide"></app-slide>
     </section>
-    <section class="btns">
-      <button (click)="prev()" class="btn-prev-next">&laquo;</button>
-      <button (click)="next()" class="btn-prev-next">&raquo;</button>
-    </section>
-  </section>
 
+    <section class="indicators" >
+      <span id="1" class="dot" [ngClass]="{'active': currentIndex === 0}"  (click)="indicatorClicked($event)"></span>
+      <span id="2" class="dot" [ngClass]="{'active': currentIndex === 1}" (click)="indicatorClicked($event)"></span>
+      <span id="3" class="dot" [ngClass]="{'active': currentIndex === 2}" (click)="indicatorClicked($event)"></span>
+      <span id="4" class="dot" [ngClass]="{'active': currentIndex === 3}" (click)="indicatorClicked($event)"></span>
+    </section>
+
+  </section>
 </section>

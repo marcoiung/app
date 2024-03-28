@@ -1,0 +1,70 @@
+
+<header class="app-header no-sel">
+
+  <section class="header-container">
+
+    <section class="menu-top">
+      <ul>
+        <li><a href="https://www.caixaseguridade.com.br/Paginas/QuemSomos.aspx">Quem Somos</a></li>
+        <li class="no-pad-right"><a href="https://www.caixaseguridade.com.br/Paginas/CanaisDeAtendimento.aspx">SAC/Ouvidoria</a></li>
+      </ul>
+    </section>
+
+    <!-- menu principal -->
+    <section class="menu-bottom" *ngIf="!showMobile">
+      <div class="logo">
+        <a href="https://www.caixaseguridade.com.br">
+          <img src="./../../../assets/img/logo/logo.svg" alt="logotipo da Caixa Residencial" >
+        </a>
+      </div>
+
+      <nav class="menu">
+
+        <ul class="nav">
+          <li>
+            <a href="#" (click)="show()"><span class="item-arrow">Produtos <img src="./../../../assets/icon/arrow-down.svg" alt="seta para baixo menu Produto"></span></a>
+          </li>
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/CanaisDeAtendimento.aspx">Canais de Atendimento</a></li>
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/AreaDoCliente.aspx">Área do Cliente</a></li>
+          <li><a href="https://www.ri.caixaseguridade.com.br/">Relação com Investidores</a></li>
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/Caixacorretora.aspx">CAIXA Corretora</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- menu mobile -->
+    <section class="menu-bottom-mobile" *ngIf="showMobile">
+
+      <div class="logo">
+
+        <a href="https://www.caixaseguridade.com.br">
+          <img src="./../../../assets/img/logo/logo.svg" alt="logotipo da Caixa Residencial" class="logo-img" >
+        </a>
+        <div class="menu-icon">
+          <a href="#" (click)="showHideMobileMegaMenu()">
+            <img src="./../../../assets/icon/burguer.svg" alt="menu icone">
+          </a>
+        </div>
+      </div>
+
+
+      <!-- menu mobile - SERÁ APRESENTADO ABAIXO DO HEADER -->
+      <nav class="menu-mobile" *ngIf="showHideMegaMenu">
+
+        <ul class="nav-mobile ul-mobile ">
+          <li>
+            <a href="#" class="item-arrow" (click)="show()">
+              Produtos  <img src="./../../../assets/icon/arrow-down-black.svg" alt="seta para baixo menu Produto">
+            </a>
+            <app-mega-menu-mobile *ngIf="showHide"></app-mega-menu-mobile>
+          </li>
+
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/CanaisDeAtendimento.aspx">Canais de Atendimento</a></li>
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/AreaDoCliente.aspx">Área do Cliente</a></li>
+          <li><a href="https://www.ri.caixaseguridade.com.br/">Relação com Investidores</a></li>
+          <li><a href="https://www.caixaseguridade.com.br/Paginas/Caixacorretora.aspx">CAIXA Corretora</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</header>

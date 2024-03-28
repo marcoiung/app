@@ -1,10 +1,44 @@
+.ul-mobile {
+  list-style-type: none;
+  overflow: hidden;
+
+
+  li {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.5rem;
+
+
+    a {
+      display: block;
+      color: #212529;
+      text-align: center;
+      text-decoration: none;
+      padding: 0;
+      transition: color 0.3s ease;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+
+}
+
 ul {
   list-style-type: none;
   overflow: hidden;
 
   li {
     float: left;
-    padding: 0.12em 0.9em 0.12em 0.12em;
+    padding-top: 0.12rem;
+    padding-right: 2.8rem;
+    padding-bottom: 0.12rem;
 
     a{
       display: block;
@@ -12,32 +46,63 @@ ul {
       text-align: center;
       text-decoration: none;
       padding: 0;
+      transition: color 0.3s ease;
 
       &:hover{
         text-decoration: underline;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1200px){
+  ul {
+    li {
+      float: left;
+      padding-right: 2rem;
+      font-size: 1.5rem;
+
+      a{
+        display: block;
+        color: $link;
+        text-align: center;
+        text-decoration: none;
+        padding: 0;
+        transition: color 0.3s ease;
+
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
 }
 
 
-// ul {
-//   list-style-type: none;
-//   overflow: hidden;
+@media (max-width: 1100px){
+  ul {
+    li {
+      float: left;
+      padding-right: 2rem;
+      font-size: 1.3rem;
 
-//   li {
-//     float: left;
-//     padding: 0.12em 0.9em 0 0;
+      a{
+        display: block;
+        color: $link;
+        text-align: center;
+        text-decoration: none;
+        padding: 0;
+        transition: color 0.3s ease;
 
-//     a{
-//       display: block;
-//       color: $link;
-//       text-align: center;
-//       text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 
-//       &:hover{
-//         text-decoration: underline;
-//       }
-//     }
-//   }
-// }
+
+
+

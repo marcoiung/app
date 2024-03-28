@@ -1,3 +1,10 @@
-<app-header></app-header>
-<app-carrousel></app-carrousel>
+<section class="app-home">
+<app-header-mega-menu class="header" (showHideMenu)="showMega($event)" [showMenuInitial]="showMenu" [isMobile]="isMobile" ></app-header-mega-menu>
+<app-mega-menu class="mega-menu" *ngIf="showMenu"></app-mega-menu>
+<app-carrousel ></app-carrousel>
+<app-bradcrumb></app-bradcrumb>
 <app-main></app-main>
+<app-footer></app-footer>
+</section>
+
+

@@ -1,7 +1,12 @@
 @import './abstract/layout';
 @import './abstract/variables';
 
+@font-face {
+  font-family: 'futura';
+  src: url('/assets/fonts/futura.ttc') format('truetype'),
+}
+
 body{
-  font-family: Poppins;
+  font-family: 'Poppins';
   background-color: $app-bg;
 }

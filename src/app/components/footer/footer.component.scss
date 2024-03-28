@@ -1,0 +1,44 @@
+@import './../../../styles/abstract/variables';
+@import './../../../styles/abstract/components/link.scss';
+
+.app-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  height: 160px;
+  background-color: $primary-blue;
+  background-image: url("./../../../assets/img/footer/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+
+    gap:50px;
+
+    .footer-brand {
+        width: 211px;
+        height: 76px;
+    }
+
+    .footer-address{
+      padding-left: 50px;
+      align-items: flex-start;
+      color: $primary-white;
+      line-height: normal;
+      font-family: Poppins;
+      font-size: 19px;
+      border-left: solid 5px #ffffff;
+    }
+
+  }
+}
